@@ -19,6 +19,7 @@ const HEROES: Hero[] = [
     selector: 'my-app',
     // template: '<h1>{{title}}</h1><h2>{{hero}} details!</h2>' template 会直接加载里面的内容
     templateUrl: 'app/view/app.html',
+
 })
 
 export class AppComponent {

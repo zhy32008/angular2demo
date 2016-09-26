@@ -6,6 +6,7 @@ import { Hero } from './hero';
 
     selector: 'my-hero-detail',
     templateUrl: 'app/view/herodetail.html'
+
 })
 
 export class HeroDetailComponent {
