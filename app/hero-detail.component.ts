@@ -1,19 +1,16 @@
 import { Component, Input } from '@angular/core'
 import { Hero } from './hero';
-export class Hero {
 
-    id: number;
-    name: string;
-
-}
 
 @Component({
 
     selector: 'my-hero-detail',
+    templateUrl: 'app/view/herodetail.html'
 })
 
 export class HeroDetailComponent {
 
+    @Input()
     hero: Hero;
 
 }

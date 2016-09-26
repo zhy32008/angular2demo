@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+
 <div *ngIf="hero">
 
     <h2>{{hero.name}} details!</h2>
@@ -15,9 +10,7 @@
 
     <div>
         <label> name: </label>
-        {{hero.name}}
+        <input [(ngModel)]="hero.name" placeholder="name"/>
     </div>
 
 </div>
-</body>
-</html>
