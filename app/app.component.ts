@@ -1,41 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
+/**
+ * Created by dennis.zhao on 2016/9/29.
+ */
 
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    // template: '<h1>{{title}}</h1><h2>{{hero}} details!</h2>' template 会直接加载里面的内容
-    templateUrl: 'app/view/app.html',
-    providers: [HeroService],
-
+    selector:'my-app',
+    templateUrl:'app/view/app.html',
+    styleUrls:['app/css/app.css'],
 })
 
+export class AppComponent {
 
-export class AppComponent implements OnInit{
     title = 'Tour of Heroes';
 
-    heroes: Hero[];
-
-    selectedHero: Hero ;
-
-    constructor(private heroService: HeroService) { }
-
-    getHeroes(): void {
-
-        this.heroService.getHeroes().then(heroes => this.heroes = heroes);
-    }
-
-    ngOnInit():void {
-
-        this.getHeroes();
-    }
-
-
-
-    onSelect(hero: Hero):void{
-
-        this.selectedHero = hero;
-    }
 }
-
